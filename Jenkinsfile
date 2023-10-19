@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+                throw Exception("...");
                 echo 'Hello World'
             }
         }
